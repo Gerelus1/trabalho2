@@ -1,0 +1,55 @@
+:root {
+    --cor-fundo: #000000; /* Preto */
+    --cor-principal: rgb(0, 27, 1); /* Verde escuro */
+    --cor-secundaria: #22ca1c; /* Roxo */
+    --cor-destaque: #0f4a72; /* Vermelho */
+    --cor-texto: #E0E0E0; /* Cinza claro */
+    --cor-degrade-inicial: #000000; /* Preto para o início do degradê */
+    --cor-degrade-final: #17680c; /* Verde escuro para o final do degradê */
+}
+
+body {
+    background: linear-gradient(180deg, var(--cor-degrade-inicial), var(--cor-degrade-final)); /* Fundo degradê */
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Aplicar a fonte Roboto */
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--cor-secundaria);
+    font-weight: 700; /* Fonte em negrito para o título */
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif; /* Aplicar a fonte Roboto */
+    font-weight: 400; /* Fonte regular para os botões */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+.caixa-perguntas, .caixa-alternativas, .caixa-resultado {
+    font-family: 'Roboto', sans-serif; /* Aplicar a fonte Roboto */
+    font-weight: 400; /* Fonte regular para o texto */
+}
